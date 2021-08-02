@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'recipe-book';
+    title = 'recipe-book';
+    currentRoute: string = "Recipes";
+
+    navigate(route: string) {
+        this.currentRoute = route;
+    }
 }

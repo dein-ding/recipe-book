@@ -1,0 +1,7 @@
+ul.nav.navbar-nav a {
+    cursor: pointer !important;
+}
+.activeRoute {
+    font-weight: 900;
+    /* color: rgb(38, 202, 5) !important; */
+}
