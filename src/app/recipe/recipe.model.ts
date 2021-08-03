@@ -2,6 +2,9 @@ export class Recipe {
     public name: string;
     public describtion: string;
     public imagePath: string;
+    
+    //TODO
+    // public cookingSteps: string[];
 
     constructor (name: string, desc: string, imgPath: string) {
         this.name = name;

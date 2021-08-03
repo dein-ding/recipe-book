@@ -16,8 +16,20 @@
 			(window:resize)="navBarCollapsed = true"
 		>
 			<ul class="nav navbar-nav">
-				<li><a (click)="navigateTo('Recipes')" [class.activeRoute]="currentRoute == 'Recipes'">Recipes</a></li>
-				<li><a (click)="navigateTo('Shopping List')" [class.activeRoute]="currentRoute == 'Shopping List'">Shopping List</a></li>
+				<li>
+					<a
+						(click)="navigateTo('Recipes')"
+						[class.activeRoute]="currentRoute == 'Recipes'"
+						>Recipes</a
+					>
+				</li>
+				<li>
+					<a
+						(click)="navigateTo('Shopping List')"
+						[class.activeRoute]="currentRoute == 'Shopping List'"
+						>Shopping List</a
+					>
+				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
