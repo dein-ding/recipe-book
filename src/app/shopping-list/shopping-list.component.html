@@ -9,12 +9,12 @@
 				*ngFor="let ingredient of ingredients; let i = index"
 				class="list-group-item"
 				style="cursor: pointer; display: flex; align-items: center"
-				>{{ ingredient.name }} ({{ ingredient.amount }}
-				{{ ingredient.unit }})
+				>{{ ingredient.name }} &nbsp;<span class="lighter">(</span>{{ ingredient.amount }}
+				{{ ingredient.unit }}<span class="lighter">)</span>
 				<button
 					class="btn btn-danger btn-sm pull-right"
 					style="position: absolute; right: 5px"
-					(click)="ingredients.pop(i)"
+					(click)="ingredients.splice(i, 1)"
 				>
 					<span class="glyphicon glyphicon-trash"></span>
 				</button>
